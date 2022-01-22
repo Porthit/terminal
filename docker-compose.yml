@@ -2,8 +2,8 @@ version: '3'
 
 networks:
   default:
-    external:
-      name: main
+    name: main
+    external: true
 
 services:
   terminal:

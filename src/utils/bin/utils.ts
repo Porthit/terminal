@@ -12,7 +12,7 @@ export const echo = async (args: string[]): Promise<string> => {
 };
 
 export const whoami = async (args: string[]): Promise<string> => {
-  return 'guest';
+  return 'hmm... ';
 };
 
 export const date = async (args: string[]): Promise<string> => {
@@ -20,7 +20,7 @@ export const date = async (args: string[]): Promise<string> => {
 };
 
 export const gui = async (args: string[]): Promise<string> => {
-  window.open('https://m4tt72.com', '_self');
+  window.open('https://porthit.com', '_self');
 
   return 'Opening GUI version...';
 };
@@ -31,7 +31,7 @@ export const email = async (args: string[]): Promise<string> => {
   return 'Opening info@naascloud.com';
 };
 
-export const vi = async (args: string[]): Promise<string> => {
+export const weshtha = async (args: string[]): Promise<string> => {
   return `why use vi? try 'emacs'.`;
 };
 
@@ -70,9 +70,10 @@ Type 'help' to see list of available commands.
 Terminal not sending input ? no problem, just reload the page :)
 
 --
-Now the project is open-source 🎉 type 'repo' to check out the repository.
+NaasCloud is just a company name that we use to show our great work 💪
+you probably heard about contoso and fabrikam ? then probably you know what I mean 😏
 --
-For a simplified version, click <a class="text-light-blue dark:text-dark-blue underline" href="https://m4tt72.com">Here</a>.
+For a simplified version, click <a class="text-light-blue dark:text-dark-blue underline" href="https://porthit.com>Here</a>.
 --
 `;
 };
