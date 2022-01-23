@@ -7,6 +7,12 @@ export const help = async (args: string[]): Promise<string> => {
   return `Available commands:\n${commands}\n\n[tab]\t trigger completion.\n[ctrl+l] clear terminal.\n[ctrl+c] cancel command.`;
 };
 
+export const ls = async (args: string[]): Promise<string> => {
+  const commands = Object.keys(bin).sort().join('\n');
+
+  return `Available commands:\n${commands}\n\n[tab]\t trigger completion.\n[ctrl+l] clear terminal.\n[ctrl+c] cancel command.`;
+};
+
 export const echo = async (args: string[]): Promise<string> => {
   return args.join(' ');
 };
@@ -19,28 +25,10 @@ export const date = async (args: string[]): Promise<string> => {
   return new Date().toString();
 };
 
-export const gui = async (args: string[]): Promise<string> => {
-  window.open('https://porthit.com', '_blank');
-
-  return 'Opening GUI version...';
-};
-
 export const email = async (args: string[]): Promise<string> => {
   window.open('mailto:info@naascloud.com');
 
   return 'Opening info@naascloud.com';
-};
-
-export const weshtha = async (args: string[]): Promise<string> => {
-  return `why use vi? try 'emacs'.`;
-};
-
-export const vim = async (args: string[]): Promise<string> => {
-  return `why use vim? try 'emacs'.`;
-};
-
-export const emacs = async (args?: string[]): Promise<string> => {
-  return `really? emacs? you should be using 'vim'`;
 };
 
 export const sudo = async (args?: string[]): Promise<string> => {
@@ -49,8 +37,26 @@ export const sudo = async (args?: string[]): Promise<string> => {
   return `Very smart! you got the power!`;
 };
 
+export const support = async (args?: string[]): Promise<string> => {
+  window.open('http://support.naascloud.com/', '_blank');
+
+  return `You are redirected to our remote support site!`;
+};
+
+export const upload = async (args?: string[]): Promise<string> => {
+  window.open('https://upload.naascloud.com/', '_blank');
+
+  return `NaasCloud Files is a very simple way to upload and share large files!`;
+};
+
 export const repo = async (args?: string[]): Promise<string> => {
   window.open('https://github.com/naascloud/naascloud', '_blank');
+
+  return 'Opening repository...';
+};
+
+export const helpdesk = async (args?: string[]): Promise<string> => {
+  window.open('https://helpdesk.naascloud.com/', '_blank');
 
   return 'Opening repository...';
 };
