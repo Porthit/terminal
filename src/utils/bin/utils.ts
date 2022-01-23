@@ -12,7 +12,7 @@ export const echo = async (args: string[]): Promise<string> => {
 };
 
 export const whoami = async (args: string[]): Promise<string> => {
-  return 'hmm... ';
+  return 'You are our guest! 🙈 ';
 };
 
 export const date = async (args: string[]): Promise<string> => {
@@ -20,7 +20,7 @@ export const date = async (args: string[]): Promise<string> => {
 };
 
 export const gui = async (args: string[]): Promise<string> => {
-  window.open('https://porthit.com', '_self');
+  window.open('https://porthit.com', '_blank');
 
   return 'Opening GUI version...';
 };
@@ -50,9 +50,15 @@ export const sudo = async (args?: string[]): Promise<string> => {
 };
 
 export const repo = async (args?: string[]): Promise<string> => {
-  window.open('https://github.com/m4tt72/terminal', '_blank');
+  window.open('https://github.com/naascloud/naascloud', '_blank');
 
   return 'Opening repository...';
+};
+
+export const blog = async (args?: string[]): Promise<string> => {
+  window.open('https://porthit.com/', '_blank');
+
+  return 'Opening our technical Blog...';
 };
 
 export const banner = (args?: string[]): string => {
@@ -67,7 +73,7 @@ export const banner = (args?: string[]): string => {
 
 Type 'help' to see list of available commands.
 
-Terminal not sending input ? no problem, just reload the page :)
+you cannot write to the terminal ? no problem, just click next to the username :)
 
 --
 NaasCloud is just a company name that we use to show our great work 💪
